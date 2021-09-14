@@ -134,6 +134,9 @@
                 var d = date.getDate(); 
                 var h = date.getHours();
                 var minute = date.getMinutes();
+                if (minute >= 0 && minute <= 9) {
+                    minute = "0" + minute;
+                }
                 var s = date.getSeconds();
     
                 var day = document.getElementById("monthDay");
